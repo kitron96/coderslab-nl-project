@@ -107,10 +107,9 @@ use App\Http\Controllers\EmployeeShiftChangeRequestController;
 use App\Http\Controllers\AwardController;
 use App\Http\Controllers\AppreciationController;
 use App\Http\Controllers\LeaveFileController;
-
+Route::get('/', function(){return redirect()->route('home');});
 Route::group(['middleware' => 'auth', 'prefix' => 'account'], function () {
     Route::post('image/upload', [ImageController::class, 'store'])->name('image.store');
-
     Route::get('account-unverified', [DashboardController::class, 'accountUnverified'])->name('account_unverified');
     Route::get('checklist', [DashboardController::class, 'checklist'])->name('checklist');
     Route::get('dashboard', [DashboardController::class, 'index'])->name('dashboard');

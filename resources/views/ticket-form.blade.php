@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{{ asset('vendor/css/all.min.css') }}">
 
     <!-- Template CSS -->
-    <link type="text/css" rel="stylesheet" media="all" href="{{ asset('css/main.css') }}">
+    <link type="text/css" rel="stylesheet" media="all" href="{{ asset('css/backend/main.css') }}">
 
     <!-- DatePicker CSS -->
     <link rel="stylesheet" href="{{ asset('vendor/css/datepicker.min.css') }}">
